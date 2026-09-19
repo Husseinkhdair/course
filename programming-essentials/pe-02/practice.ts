@@ -1,32 +1,24 @@
-let traineeName: string = "Hussein";
-let age: number = 20;
+const traineeName: string = "Hussein";
+const age: number = 20;
+
 let completedLessons: number = 5;
-let isReady: boolean = true;
-const trainerName: string = "Ahmed";
+let isReady: boolean = false;
 
-console.log(traineeName, typeof traineeName);
-console.log(age, typeof age);
-console.log(completedLessons, typeof completedLessons);
-console.log(isReady, typeof isReady);
-console.log(trainerName, typeof trainerName);
+const trainerName: string | null = null;
+const learningLanguage = "TypeScript";
 
-traineeName = "Ali";
-age = 21;
 completedLessons = 6;
-isReady = false;
 
-console.log("\nAfter changes:");
-console.log(traineeName);
-console.log(age);
-console.log(completedLessons);
-console.log(isReady);
+const status: string = isReady
+    ? "Ready to continue"
+    : "Still learning";
 
-// خطأ مقصود:
-// completedLessons = "six";
-
-// بعد قراءة رسالة المترجم نعيد القيمة الصحيحة
-completedLessons = 7;
-
-console.log("\nFinal lessons:", completedLessons);
+console.log(`Name: ${traineeName}`);
+console.log(`Age: ${age}`);
+console.log(`Completed lessons: ${completedLessons}`);
+console.log(`Ready: ${isReady}`);
+console.log(`Trainer: ${trainerName ?? "Not assigned"}`);
+console.log(`Learning language: ${learningLanguage}`);
+console.log(`Status: ${status}`);
 
 export {};

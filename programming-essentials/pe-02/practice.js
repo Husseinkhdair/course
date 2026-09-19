@@ -1,22 +1,20 @@
-let traineeName = "Hussein";
-let age = 20;
+const traineeName = "Hussein";
+const age = 20;
 let completedLessons = 5;
-let isReady = true;
-const trainerName = "Ahmed";
+let isReady = false;
+const trainerName = null;
+const learningLanguage = "Python";
 
-console.log(traineeName, typeof traineeName);
-console.log(age, typeof age);
-console.log(completedLessons, typeof completedLessons);
-console.log(isReady, typeof isReady);
-console.log(trainerName, typeof trainerName);
-
-traineeName = "Ali";
-age = 21;
 completedLessons = 6;
-isReady = false;
 
-console.log("\nAfter changes:");
-console.log(traineeName);
-console.log(age);
-console.log(completedLessons);
-console.log(isReady);
+const status = isReady
+    ? "Ready to continue"
+    : "Still learning";
+
+console.log(`Name: ${traineeName}`);
+console.log(`Age: ${age}`);
+console.log(`Completed lessons: ${completedLessons}`);
+console.log(`Ready: ${isReady}`);
+console.log(`Trainer: ${trainerName ?? "Not assigned"}`);
+console.log(`Learning language: ${learningLanguage}`);
+console.log(`Status: ${status}`);
